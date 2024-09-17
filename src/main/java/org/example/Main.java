@@ -8,5 +8,6 @@ public class Main {
         ArrayUtility arrayUtility = new ArrayUtility();
 
         arrayUtility.FindMinValue(array);
+        arrayUtility.FindMaxValue(array);
     }
 }
