@@ -5,5 +5,8 @@ public class Main {
         CreateArray createArray = new CreateArray();
         array = createArray.CreateArray();
 
+        ArrayUtility arrayUtility = new ArrayUtility();
+
+        arrayUtility.FindMinValue(array);
     }
 }
