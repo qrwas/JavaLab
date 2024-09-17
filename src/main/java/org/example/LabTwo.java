@@ -30,7 +30,6 @@ public class LabTwo {
 
 
         PrintArray(array);
-        FindMin
         return array;
     }
 
