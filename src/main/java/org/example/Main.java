@@ -8,7 +8,8 @@ public class Main {
         ArrayUtility arrayUtility = new ArrayUtility();
 
         arrayUtility.FindMinValue(array);
-        arrayUtility.FindMinValue(array);
+        arrayUtility.FindMaxValue(array);
         arrayUtility.FindArithmeticMean(array);
+        arrayUtility.FindGeometricMean(array);
     }
 }

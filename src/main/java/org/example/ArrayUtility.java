@@ -37,4 +37,18 @@ public class ArrayUtility {
         float result = (float) sumAllElements / countElement;
         System.out.print("Середнє арифметичне значення: " + result + "\n");
     }
+
+    public void FindGeometricMean(int[][] arr) {
+        int countElement = 0;
+        double multAllElements = 1;
+        for (int i = 0; i < arr.length; i++) {
+            countElement += arr[i].length;
+            for (int j = 0; j < arr[i].length; j++) {
+                multAllElements *= arr[i][j];
+            }
+        }
+
+        float result = (float) Math.pow(multAllElements, (1/(float)countElement));
+        System.out.print("Середнє геометричне значення: " + result + "\n");
+    }
 }
