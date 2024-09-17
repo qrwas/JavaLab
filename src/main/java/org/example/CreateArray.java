@@ -1,9 +1,9 @@
 package org.example;
 import java.util.Scanner;
 
-public class LabTwo {
+public class CreateArray {
     Scanner scanner;
-    public int[][] StartLab2() {
+    public int[][] CreateArray() {
         scanner = new Scanner(System.in);
         boolean correctMassive = false;
         int sX = 0;
