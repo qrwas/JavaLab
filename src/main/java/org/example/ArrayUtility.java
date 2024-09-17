@@ -24,4 +24,17 @@ public class ArrayUtility {
         }
         System.out.print("максимальне значення: " + max + "\n");
     }
+
+    public void FindArithmeticMean(int[][] arr) {
+        int countElement = 0;
+        int sumAllElements = 0;
+        for (int i = 0; i < arr.length; i++) {
+            countElement += arr[i].length;
+            for (int j = 0; j < arr[i].length; j++) {
+                sumAllElements += arr[i][j];
+            }
+        }
+        float result = (float) sumAllElements / countElement;
+        System.out.print("Середнє арифметичне значення: " + result + "\n");
+    }
 }
