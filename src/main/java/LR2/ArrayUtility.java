@@ -1,4 +1,4 @@
-package org.example;
+package LR2;
 
 public class ArrayUtility {
     public void FindMinValue(int[][] arr) {
