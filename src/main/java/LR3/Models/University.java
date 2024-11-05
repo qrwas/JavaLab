@@ -1,12 +1,14 @@
 package LR3.Models;
 
+import java.util.List;
+
 public class University extends BaseBasePidrozdil {
 
-    public Facultet facultet;
-    public University(String name, Human head, Facultet facultet) {
+    public List<Facultet> facultets;
+    public University(String name, Human head, List<Facultet> facultets) {
         this.name = name;
         this.head = head;
-        this.facultet = facultet;
+        this.facultets = facultets;
     }
     
 }

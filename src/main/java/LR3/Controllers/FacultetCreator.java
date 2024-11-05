@@ -3,7 +3,6 @@ package LR3.Controllers;
 import java.util.Scanner;
 
 import LR3.Models.Facultet;
-import LR3.Models.Group;
 import LR3.Models.Human;
 import LR3.Models.Kafedra;
 

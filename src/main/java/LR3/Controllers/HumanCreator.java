@@ -26,7 +26,7 @@ public class HumanCreator {
             sex = Sex.male;
             System.out.print("Error input. Sex set to male");
         }
-
+        scanner.close();
         return new Human(name, prizvishe, pobatkove, sex);
     }
 }
