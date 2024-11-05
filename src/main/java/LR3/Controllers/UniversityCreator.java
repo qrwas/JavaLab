@@ -16,7 +16,7 @@ public class UniversityCreator {
         Human head = new HumanCreator().Create(); 
 
         Kafedra kafedra = new KafedraCreator().Create();
-        
+        scanner.close();
         return new University(name, head);
     }
 }
