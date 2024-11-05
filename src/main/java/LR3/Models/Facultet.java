@@ -2,13 +2,11 @@ package LR3.Models;
 
 public class Facultet extends BaseBasePidrozdil {
 
-    public Facultet(String name, Human head) {
+    public Kafedra kafedra;
+    public Facultet(String name, Human head, Kafedra kafedra) {
         this.name = name;
         this.head = head;
-    }
-
-    public Facultet() {
-        //TODO Auto-generated constructor stub
+        this.kafedra = kafedra;
     }
     
 }
