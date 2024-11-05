@@ -1,4 +1,4 @@
-package LR3.Controllers;
+package LR3.Models;
 
 public class Human {
     public String name;

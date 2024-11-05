@@ -1,5 +1,5 @@
-package LR3.Controllers;
+package LR3.Models;
 
-public class Group extends BaseModel {
+public class Group extends BaseBasePidrozdil {
     
 }

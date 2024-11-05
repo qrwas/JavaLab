@@ -1,5 +1,5 @@
-package LR3.Controllers;
+package LR3.Models;
 
-public class Kafedra extends BaseModel {
+public class Kafedra extends BaseBasePidrozdil {
     
 }
