@@ -6,5 +6,9 @@ public class Facultet extends BaseBasePidrozdil {
         this.name = name;
         this.head = head;
     }
+
+    public Facultet() {
+        //TODO Auto-generated constructor stub
+    }
     
 }
