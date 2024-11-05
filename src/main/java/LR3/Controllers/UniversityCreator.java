@@ -19,12 +19,12 @@ public class UniversityCreator {
         System.out.print("Create Facultets: \n");
         List<Facultet> facultets = new ArrayList<Facultet>();
         System.out.print("Input count: \n");
-        int count = scanner.nextInt(); // Зчитування як ціле число
+        int count = scanner.nextInt();
 
         for (int i = 0; i < count; i++) {
-            Facultet facultet = new FacultetCreator().Create(); // Створення нового Facultet
-            facultets.add(facultet); // Додавання до списку
-            System.out.println("Facultet " + (i + 1) + " created.");
+            Facultet facultet = new FacultetCreator().Create();
+            facultets.add(facultet);
+            System.out.println("Facultet " + (i + 1) + " created. \n");
         }
         scanner.close();
         return new University(name, head, facultets);

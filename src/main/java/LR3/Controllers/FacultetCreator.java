@@ -19,12 +19,12 @@ public class FacultetCreator {
 
         List<Kafedra> kafedras = new ArrayList<Kafedra>();
         System.out.print("Input count: \n");
-        int count = scanner.nextInt(); // Зчитування як ціле число
+        int count = scanner.nextInt();
 
         for (int i = 0; i < count; i++) {
-            Kafedra kafedra = new KafedraCreator().Create(); // Створення нового Facultet
-            kafedras.add(kafedra); // Додавання до списку
-            System.out.println("Facultet " + (i + 1) + " created.");
+            Kafedra kafedra = new KafedraCreator().Create();
+            kafedras.add(kafedra);
+            System.out.println("Kafedra " + (i + 1) + " created. \n");
         }
 
        

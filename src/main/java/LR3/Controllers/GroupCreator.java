@@ -1,5 +1,7 @@
 package LR3.Controllers;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import LR3.Models.Group;
@@ -14,8 +16,19 @@ public class GroupCreator {
         System.out.print("Create Head: ");
         Human head = new HumanCreator().Create(); 
         System.out.print("Create Student:\n ");
-        Student student = new StudentCreator().Create();
+
+        List<Student> students = new ArrayList<Student>();
+        System.out.print("Input count: \n");
+        int count = scanner.nextInt();
+
+        for (int i = 0; i < count; i++) {
+            Student student = new StudentCreator().Create();
+            students.add(student); 
+            System.out.println("Student " + (i + 1) + " created. \n");
+        }
+
+       
         scanner.close();
-        return new Group(name, head, student);
+        return new Group(name, head, students);
     }
 }
