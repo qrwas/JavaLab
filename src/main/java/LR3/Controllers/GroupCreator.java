@@ -13,7 +13,7 @@ public class GroupCreator {
         String name = scanner.nextLine();
         System.out.print("Create Head: ");
         Human head = new HumanCreator().Create(); 
-        System.out.print("Create Student: ");
+        System.out.print("Create Student:\n ");
         Student student = new StudentCreator().Create();
         scanner.close();
         return new Group(name, head, student);

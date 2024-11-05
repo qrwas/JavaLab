@@ -6,6 +6,7 @@ import LR3.Models.University;
 public class Run {
     public static void main(String[] args) {
         System.out.print("Hello!");
+        CreateTypycalUniversity();
     }
 
     public static void CreateTypycalUniversity(){

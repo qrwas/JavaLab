@@ -18,14 +18,15 @@ public class HumanCreator {
         System.out.print("Enter sex. male or famele: ");
         String sexS = scanner.nextLine();
         Sex sex;
-        if(sexS == "male")
+        if (sexS.equals("male"))
             sex = Sex.male;
-        else if(sexS == "famele")
+        else if (sexS.equals("famele"))
             sex = Sex.famele;
-        else{
+        else {
             sex = Sex.male;
             System.out.print("Error input. Sex set to male");
         }
+
         return new Human(name, prizvishe, pobatkove, sex);
     }
 }

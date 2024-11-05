@@ -14,7 +14,7 @@ public class FacultetCreator {
         String name = scanner.nextLine();
         System.out.print("Create Head: ");
         Human head = new HumanCreator().Create(); 
-        System.out.print("Create Kafedra: ");
+        System.out.print("Create Kafedra: \n ");
         Kafedra kafedra = new KafedraCreator().Create();
         scanner.close();
         return new Facultet(name, head, kafedra);

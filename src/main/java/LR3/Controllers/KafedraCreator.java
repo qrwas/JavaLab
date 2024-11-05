@@ -14,7 +14,7 @@ public class KafedraCreator {
         String name = scanner.nextLine();
         System.out.print("Create Head: ");
         Human head = new HumanCreator().Create(); 
-        System.out.print("Create Group: ");
+        System.out.print("Create Group: \n");
         Group group = new GroupCreator().Create();
         scanner.close();
         return new Kafedra(name, head, group);
