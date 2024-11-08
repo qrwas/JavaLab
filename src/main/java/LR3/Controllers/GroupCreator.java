@@ -4,31 +4,31 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import LR3.Models.Facultet;
+import LR3.Models.Group;
 import LR3.Models.Human;
-import LR3.Models.Kafedra;
+import LR3.Models.Student;
 
-public class FacultetCreator {
-    public Facultet Create(){
+public class GroupCreator {
+    public Group Create(){
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter name Facultet: ");
+        System.out.print("Enter name Group: ");
         String name = scanner.nextLine();
         System.out.print("Create Head: ");
         Human head = new HumanCreator().Create(); 
-        System.out.print("Create Kafedras: \n ");
+        System.out.print("Create Student:\n ");
 
-        List<Kafedra> kafedras = new ArrayList<Kafedra>();
+        List<Student> students = new ArrayList<Student>();
         System.out.print("Input count: \n");
         int count = scanner.nextInt();
 
         for (int i = 0; i < count; i++) {
-            Kafedra kafedra = new KafedraCreator().Create();
-            kafedras.add(kafedra);
-            System.out.println("Kafedra " + (i + 1) + " created. \n");
+            Student student = new StudentCreator().Create();
+            students.add(student); 
+            System.out.println("Student " + (i + 1) + " created. \n");
         }
 
        
         scanner.close();
-        return new Facultet(name, head, kafedras);
+        return new Group(name, head, students);
     }
 }

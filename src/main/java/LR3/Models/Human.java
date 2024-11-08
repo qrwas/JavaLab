@@ -11,4 +11,7 @@ public class Human {
         this.popatkovy = popatkovy;
         this.sex = sex;
     }
+    public Human() {
+        //TODO Auto-generated constructor stub
+    }
 }
