@@ -5,13 +5,12 @@ import LR3.Models.University;
 
 public class Run {
     public static void main(String[] args) {
-        System.out.print("Hello!");
-        CreateTypycalUniversity();
+        new Run().createTypycalUniversity();
     }
 
-    public static void CreateTypycalUniversity(){
+    public void createTypycalUniversity(){
         UniversityCreator uC = new UniversityCreator();
-        University university = uC.Create();
+        University university = uC.create();
     }
 }
 

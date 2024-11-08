@@ -6,7 +6,7 @@ import LR3.Models.Human;
 import LR3.Models.Sex;
 
 public class HumanCreator {
-    public Human Create(){
+    public Human create(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter name: ");
         String name = scanner.nextLine();
@@ -19,11 +19,11 @@ public class HumanCreator {
         String sexS = scanner.nextLine();
         Sex sex;
         if (sexS.equals("male"))
-            sex = Sex.male;
+            sex = Sex.MALE;
         else if (sexS.equals("famele"))
-            sex = Sex.famele;
+            sex = Sex.FAMELE;
         else {
-            sex = Sex.male;
+            sex = Sex.MALE;
             System.out.print("Error input. Sex set to male");
         }
         scanner.close();
