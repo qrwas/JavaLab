@@ -3,50 +3,50 @@ import java.util.Scanner;
 
 public class CreateArray {
     Scanner scanner;
-    public int[][] CreateArray() {
+    public int[][] createArray() {
         scanner = new Scanner(System.in);
         boolean correctMassive = false;
         int sX = 0;
         int sY = 0;
         while (!correctMassive) {
-            System.out.print("Введіть ширину масиву не більше 20: ");
+            System.out.print("enter width arraay less than 20: ");
             sX = scanner.nextInt();
             scanner.nextLine();
 
-            System.out.print("Введіть висоту масиву не більше 20: ");
+            System.out.print("enter height arraay less than 20: ");
             sY = scanner.nextInt();
             scanner.nextLine();
             correctMassive = sX < 20 && sY < 20 && sX > 0 && sY > 0;
         }
 
-        System.out.print("Введіть random для рандомного заповнення матриці: ");
+        System.out.print("enter random for random fill array: ");
         String checkRandom = scanner.nextLine();
 
         int[][] array;
         if(checkRandom.equals("random"))
-            array = CreateRandomArray(sX, sY);
+            array = createRandomArray(sX, sY);
         else
-            array = CreateManualArray(sX, sY);
+            array = createManualArray(sX, sY);
 
 
-        PrintArray(array);
+        printArray(array);
         return array;
     }
 
 
 
-    public int[][] CreateManualArray(int x, int y) {
+    public int[][] createManualArray(int x, int y) {
         int[][] array = new int[x][y];
         for(int i=0; i<x; i++){
             for(int j=0; j<y; j++){
-                System.out.print("Введіть int значення для [" + i +"]["+ j + "]: ");
+                System.out.print("enter int value for [" + i +"]["+ j + "]: ");
                 array[i][j] = scanner.nextInt();
             }
         }
         return array;
     }
 
-    public int[][] CreateRandomArray(int x, int y) {
+    public int[][] createRandomArray(int x, int y) {
         int[][] array = new int[x][y];
         for(int i=0; i<x; i++){
             for(int j=0; j<y; j++){
@@ -56,7 +56,7 @@ public class CreateArray {
         return array;
     }
 
-    private void PrintArray(int[][] array) {
+    private void printArray(int[][] array) {
         for (int[] ints : array) {
             for (int anInt : ints) {
                 System.out.print(anInt + " ");

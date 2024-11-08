@@ -10,7 +10,7 @@ public class ArrayUtility {
                 }
             }
         }
-        System.out.print("мінімальне значення: " + min + "\n");
+        System.out.print("min value: " + min + "\n");
     }
 
     public void FindMaxValue(int[][] arr) {
@@ -22,7 +22,7 @@ public class ArrayUtility {
                 }
             }
         }
-        System.out.print("максимальне значення: " + max + "\n");
+        System.out.print("max value: " + max + "\n");
     }
 
     public void FindArithmeticMean(int[][] arr) {
@@ -35,7 +35,7 @@ public class ArrayUtility {
             }
         }
         float result = (float) sumAllElements / countElement;
-        System.out.print("Середнє арифметичне значення: " + result + "\n");
+        System.out.print("Arithmetic mean value: " + result + "\n");
     }
 
     public void FindGeometricMean(int[][] arr) {
@@ -49,6 +49,6 @@ public class ArrayUtility {
         }
 
         float result = (float) Math.pow(multAllElements, (1/(float)countElement));
-        System.out.print("Середнє геометричне значення: " + result + "\n");
+        System.out.print("Geometric mean value: " + result + "\n");
     }
 }

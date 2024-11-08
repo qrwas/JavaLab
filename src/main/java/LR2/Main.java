@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
         int array[][];
         CreateArray createArray = new CreateArray();
-        array = createArray.CreateArray();
+        array = createArray.createArray();
 
         ArrayUtility arrayUtility = new ArrayUtility();
 
